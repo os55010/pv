@@ -1,1 +1,1 @@
-helm install --name nfs-provisioner --set nfs.server=<< nfs_server_addr >> --set nfs.path=<<path to nfs>> stable/nfs-client-provisioner
+helm install nfs-provisioner stable/nfs-client-provisioner --set nfs.server={{ addr }} --set nfs.path={{ path }}
